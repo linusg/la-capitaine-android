@@ -1,3 +1,84 @@
 # La Capitaine Android
 
-Icon theme for Android using the [La Capitaine](https://github.com/keeferrourke/la-capitaine-icon-theme) icons.
+Icon theme for Android using the [La Capitaine](https://github.com/keeferrourke/la-capitaine-icon-theme)
+icons.
+
+This is still in a super early stage and currently only works with Lawnchair
+launcher. Support for more launchers should be as simple as adding a few
+`<intent-filter>`s to `AndroidManifest.xml`,
+[see here](https://github.com/iamareebjamal/scratch_icon_pack_source/blob/master/app/src/main/AndroidManifest.xml).
+
+Naturally I will add icons for the apps I'm personally using first as that's
+the most straightforward way of making progess - I can directly test it on my
+device.
+
+Any help is highly appreciated!
+
+## Requirements
+
+- Android studio
+- Python 3.6+from PyPI
+- The following Python modules: `cairosvg`, `colored` (install using pip)
+
+## Installation
+
+*There's no release of this app on the Google Play Store or F-Droid yet,
+although that might happen in the future.*
+
+Run `python3 res.py build` which will create the files `xml/appfilter.xml`,
+`xml/drawable.xml`, `values/iconpack.xml` and as well as rendering all used SVG
+icons (in `la-capitaine-icon-theme/apps/scalable`) to PNG files.
+
+Open the project in Android Studio, compile it and install it on your phone or
+emulator.
+
+Make sure to select `Launch: Nothing` in the run configuration as the app has
+no launcher intent filter.
+
+To remove the files created by the build script run `python3 res.py clean`.
+
+## Development
+
+To add missing icons, you'll need:
+
+- The app package name
+- The name of the activity that's missing an icon (usually the main activity)
+- An icon from `la-capitaine-icon-theme/apps/scalable` that should be applied
+
+Use a tool like [Assist Mapper](https://play.google.com/store/apps/details?id=amirz.assistmapper)
+to obtain these details (this app is for assistant button re-mapping, but it
+shows package and activity names and highlights the main activity).
+
+A new icon entry in `res.json` looks like this:
+
+```json
+{
+  "package": "com.example.app",
+  "activity": "com.example.app.activities.MainActivity",
+  "file": "icon-file.svg"
+}
+````
+
+Note that the activity domain doesn't necessarily match the package domain.
+Please keep the entries sorted alphabetically by package name.
+
+Now, do the steps from the *Installation* section again. You're done!
+
+Try restarting your launcher application if new icons don't appear immediately.
+
+## To Do
+
+Currently, since icon files are rendered and saved per activity, there might
+be duplicates.
+
+## Authors
+
+- **Linus Groh** ([**@linusg**](https://github.com/linusg/)) -
+  Initial work on La Capitaine Android
+- **Keefer Rourke** ([**@keeferrourke**](https://github.com/keeferrourke/)) -
+  Creator of the La Capitaine Icon Theme
+
+## License
+
+This project is licensed under the GPLv3 license - see [`LICENSE`](LICENSE)
+file for details.
