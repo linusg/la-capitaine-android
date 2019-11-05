@@ -57,9 +57,10 @@ shows package and activity names and highlights the main activity).
 A new app entry in [`res.yml`](res.yml) looks like this:
 
 ```yaml
-- package: com.example.app
-  activity: com.example.app.activities.MainActivity
-  icon: example_icon
+apps:
+  - package: com.example.app
+    activity: com.example.app.activities.MainActivity
+    icon: example_icon
 ```
 
 If `example_icon` doesn't exist yet, add it:
