@@ -16,8 +16,8 @@ Any help is highly appreciated!
 
 ## Requirements
 
-- Android studio
-- Python 3.6+from PyPI
+- Android Studio
+- Python 3.6+
 - The following Python modules: `cairosvg`, `colored` (install using pip)
 
 ## Installation
@@ -68,8 +68,10 @@ Try restarting your launcher application if new icons don't appear immediately.
 
 ## To Do
 
-Currently, since icon files are rendered and saved per activity, there might
-be duplicates.
+- Currently, since icon files are rendered and saved per activity, there might
+  be duplicates.
+- Use a more human-friendly and compact file format for the icon list than JSON.
+  Support for comments would be super useful as well.
 
 ## Authors
 
