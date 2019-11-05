@@ -42,16 +42,6 @@ DRAWABLE_XML_TEMPLATE = """\
 </resources>
 """
 
-ICONPACK_XML_PATH = PROJECT_DIR / "app/src/main/res/values/iconpack.xml"
-ICONPACK_XML_TEMPLATE = """\
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="icon_pack" translatable="false">
-        {items}
-    </string-array>
-</resources>
-"""
-
 Icons = Mapping[str, str]
 
 
@@ -87,15 +77,6 @@ def write_drawable_xml(icons: Icons) -> None:
     DRAWABLE_XML_PATH.write_text(content)
 
 
-def write_iconpack_xml(icons: Icons) -> None:
-    items = [
-        f"<item>{get_drawable_name(icon_name)}</item>" for icon_name in icons.keys()
-    ]
-    content = ICONPACK_XML_TEMPLATE.format(items="\n        ".join(items))
-    print(f"Writing {COLOR_YELLOW}values/iconpack.xml{COLOR_RESET}")
-    ICONPACK_XML_PATH.write_text(content)
-
-
 def write_icon_images(icons: Icons) -> None:
     DRAWABLE_NODPI_DIR.mkdir(mode=0o755, parents=True, exist_ok=True)
     for icon_name, icon_file in icons.items():
@@ -126,10 +107,9 @@ def main() -> None:
         apps = [App(**app) for app in res["apps"]]
         write_appfilter_xml(apps)
         write_drawable_xml(icons)
-        write_iconpack_xml(icons)
         write_icon_images(icons)
     elif command == "clean":
-        for file in (APPFILTER_XML_PATH, DRAWABLE_XML_PATH, ICONPACK_XML_PATH):
+        for file in (APPFILTER_XML_PATH, DRAWABLE_XML_PATH):
             try:
                 file.unlink()
                 print(

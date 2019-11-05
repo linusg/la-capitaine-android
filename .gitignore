@@ -14,7 +14,6 @@
 .cxx
 
 app/src/main/res/drawable-nodpi/la_capitaine__*.png
-app/src/main/res/values/iconpack.xml
 app/src/main/res/xml/appfilter.xml
 app/src/main/res/xml/drawable.xml
 
