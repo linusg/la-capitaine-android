@@ -1,5 +1,7 @@
 # La Capitaine Android
 
+<img src="homescreen.jpg" alt="Homescreen" height="400" align="right">
+
 Icon theme for Android using the [La Capitaine](https://github.com/keeferrourke/la-capitaine-icon-theme)
 icons.
 
