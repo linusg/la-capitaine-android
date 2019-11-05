@@ -1,11 +1,13 @@
 icons:
   # General
+  calculator: accessories-calculator.svg
   calendar: calendar.svg
   camera: camera.svg
   camera_cheese: cheese.svg
   camera_round: camera-web.svg
   camera_round_alt: snap.svg
   clock: clock.svg
+  clock_alt: yast-timezone.svg
   contacts: addressbook.svg
   email: mail-client.svg
   email_alt: yast-mail.svg
@@ -13,8 +15,9 @@ icons:
   file_manager_green: file-manager-green.svg
   file_manager_red: file-manager-red.svg
   gallery: image-viewer.svg
-  phone: sflphone.svg
-  phone_alt: viber.svg
+  keyboard: preferences-desktop-keyboard.svg
+  phone_lime: sflphone.svg
+  phone_pink: viber.svg
   settings: systemsettings.svg
   terminal: terminal.svg
   terminal_alt: xterm.svg
@@ -59,7 +62,7 @@ icons:
   telegram: telegram.svg
   twitter: twitter.svg
   twitter_dark: tweetdeck.svg
-  twitter_green: polly.svg
+  twitter_lime: polly.svg
   whatsapp: whatsapp.svg
 
 apps:
@@ -121,7 +124,7 @@ apps:
 
   - package: com.google.android.dialer
     activity: com.google.android.dialer.extensions.GoogleDialtactsActivity
-    icon: phone
+    icon: phone_lime
 
   - package: com.google.android.GoogleCameraEng
     activity: com.android.camera.CameraLauncher
