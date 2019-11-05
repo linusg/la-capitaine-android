@@ -22,7 +22,8 @@ Any help is highly appreciated!
 - Python 3.6+
 - The following Python modules:
   [`CairoSVG`](https://pypi.org/project/CairoSVG/),
-  [`colored`](https://pypi.org/project/colored/) (install using pip)
+  [`colored`](https://pypi.org/project/colored/) and
+  [`ruamel.yaml`](https://pypi.org/project/ruamel.yaml/) (install using pip)
 
 ## Installation
 
@@ -53,14 +54,12 @@ Use a tool like [Assist Mapper](https://play.google.com/store/apps/details?id=am
 to obtain these details (this app is for assistant button re-mapping, but it
 shows package and activity names and highlights the main activity).
 
-A new icon entry in [`res.json`](res.json) looks like this:
+A new icon entry in [`res.yml`](res.yml) looks like this:
 
-```json
-{
-  "package": "com.example.app",
-  "activity": "com.example.app.activities.MainActivity",
-  "file": "icon-file.svg"
-}
+```yaml
+- package: com.example.app
+  activity: com.example.app.activities.MainActivity
+  file: icon-file.svg
 ````
 
 Note that the activity domain doesn't necessarily match the package domain.
@@ -74,8 +73,6 @@ Try restarting your launcher application if new icons don't appear immediately.
 
 - Currently, since icon files are rendered and saved per activity, there might
   be duplicates.
-- Use a more human-friendly and compact file format for the icon list than JSON.
-  Support for comments would be super useful as well.
 
 ## Authors
 

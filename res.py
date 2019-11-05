@@ -1,4 +1,3 @@
-import json
 import re
 import sys
 from pathlib import Path
@@ -6,6 +5,7 @@ from typing import Iterable, NamedTuple
 
 from cairosvg import svg2png
 from colored import fg, attr
+from ruamel.yaml import YAML
 
 ICON_SIZE = 256
 
@@ -120,9 +120,8 @@ def main() -> None:
         command = ""
 
     if command == "build":
-        res_json_path = PROJECT_DIR / "res.json"
-        res_json_content = res_json_path.read_text()
-        icons = [Icon(**icon) for icon in json.loads(res_json_content)]
+        res_path = PROJECT_DIR / "res.yml"
+        icons = [Icon(**icon) for icon in YAML().load(res_path)]
         write_appfilter_xml(icons)
         write_drawable_xml(icons)
         write_iconpack_xml(icons)
