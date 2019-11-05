@@ -54,13 +54,22 @@ Use a tool like [Assist Mapper](https://play.google.com/store/apps/details?id=am
 to obtain these details (this app is for assistant button re-mapping, but it
 shows package and activity names and highlights the main activity).
 
-A new icon entry in [`res.yml`](res.yml) looks like this:
+A new app entry in [`res.yml`](res.yml) looks like this:
 
 ```yaml
 - package: com.example.app
   activity: com.example.app.activities.MainActivity
-  file: icon-file.svg
-````
+  icon: example_icon
+```
+
+If `example_icon` doesn't exist yet, add it:
+
+```yaml
+icons:
+  example_icon: example-icon.svg
+```
+
+This way an icon that's being used by multiple apps has only be included once.
 
 Note that the activity domain doesn't necessarily match the package domain.
 Please keep the entries sorted alphabetically by package name.

@@ -1,7 +1,6 @@
-import re
 import sys
 from pathlib import Path
-from typing import Iterable, NamedTuple
+from typing import Iterable, Mapping, NamedTuple
 
 from cairosvg import svg2png
 from colored import fg, attr
@@ -53,55 +52,56 @@ ICONPACK_XML_TEMPLATE = """\
 </resources>
 """
 
+Icons = Mapping[str, str]
 
-class Icon(NamedTuple):
+
+class App(NamedTuple):
     package: str
     activity: str
-    file: str
+    icon: str
 
 
-def activity_to_drawable_name(activity: str) -> str:
-    slug = re.sub(r"\W+", "_", activity).lower()
+def get_drawable_name(icon_name: str) -> str:
     # Add a prefix so all generated PNGs can be excluded from version control
-    return f"{DRAWABLE_NAME_PREFIX}{slug}"
+    return f"{DRAWABLE_NAME_PREFIX}{icon_name}"
 
 
-def write_appfilter_xml(icons: Iterable[Icon]) -> None:
+def write_appfilter_xml(apps: Iterable[App]) -> None:
     items = [
-        f'<item component="ComponentInfo{{{icon.package}/{icon.activity}}}"'
-        f' drawable="{activity_to_drawable_name(icon.activity)}" />'
-        for icon in icons
+        f'<item component="ComponentInfo{{{app.package}/{app.activity}}}"'
+        f' drawable="{get_drawable_name(app.icon)}" />'
+        for app in apps
     ]
     content = APPFILTER_XML_TEMPLATE.format(items="\n    ".join(items))
     print(f"Writing {COLOR_YELLOW}xml/appfilter.xml{COLOR_RESET}")
     APPFILTER_XML_PATH.write_text(content)
 
 
-def write_drawable_xml(icons: Iterable[Icon]) -> None:
+def write_drawable_xml(icons: Icons) -> None:
     items = [
-        f'<item drawable="{activity_to_drawable_name(icon.activity)}" />'
-        for icon in icons
+        f'<item drawable="{get_drawable_name(icon_name)}" />'
+        for icon_name in icons.keys()
     ]
     content = DRAWABLE_XML_TEMPLATE.format(items="\n    ".join(items))
     print(f"Writing {COLOR_YELLOW}xml/drawable.xml{COLOR_RESET}")
     DRAWABLE_XML_PATH.write_text(content)
 
 
-def write_iconpack_xml(icons: Iterable[Icon]) -> None:
+def write_iconpack_xml(icons: Icons) -> None:
     items = [
-        f"<item>{activity_to_drawable_name(icon.activity)}</item>" for icon in icons
+        f"<item>{get_drawable_name(icon_name)}</item>" for icon_name in icons.keys()
     ]
     content = ICONPACK_XML_TEMPLATE.format(items="\n        ".join(items))
     print(f"Writing {COLOR_YELLOW}values/iconpack.xml{COLOR_RESET}")
     ICONPACK_XML_PATH.write_text(content)
 
 
-def write_icon_images(icons: Iterable[Icon]) -> None:
+def write_icon_images(icons: Icons) -> None:
     DRAWABLE_NODPI_DIR.mkdir(mode=0o755, parents=True, exist_ok=True)
-    for icon in icons:
-        # Resolve allows using symlinks for icon.file
-        src = (LA_CAPITAINE_ICONS_DIR / icon.file).resolve()
-        dest = DRAWABLE_NODPI_DIR / f"{activity_to_drawable_name(icon.activity)}.png"
+    for icon_name, icon_file in icons.items():
+        # Resolve allows using symlinks for icon file
+        src = (LA_CAPITAINE_ICONS_DIR / icon_file).resolve()
+        dest = DRAWABLE_NODPI_DIR / f"{get_drawable_name(icon_name)}.png"
         print(
             f"Writing {COLOR_YELLOW}{dest.parent.name}/{dest.name}{COLOR_RESET} ({COLOR_CYAN}{src.name}{COLOR_RESET})"
         )
@@ -121,8 +121,10 @@ def main() -> None:
 
     if command == "build":
         res_path = PROJECT_DIR / "res.yml"
-        icons = [Icon(**icon) for icon in YAML().load(res_path)]
-        write_appfilter_xml(icons)
+        res = YAML().load(res_path)
+        icons = res["icons"]
+        apps = [App(**app) for app in res["apps"]]
+        write_appfilter_xml(apps)
         write_drawable_xml(icons)
         write_iconpack_xml(icons)
         write_icon_images(icons)
