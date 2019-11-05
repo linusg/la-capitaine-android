@@ -51,7 +51,7 @@ Use a tool like [Assist Mapper](https://play.google.com/store/apps/details?id=am
 to obtain these details (this app is for assistant button re-mapping, but it
 shows package and activity names and highlights the main activity).
 
-A new icon entry in `res.json` looks like this:
+A new icon entry in [`res.json`](res.json) looks like this:
 
 ```json
 {
