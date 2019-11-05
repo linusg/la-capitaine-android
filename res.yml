@@ -18,11 +18,26 @@ icons:
   firefox_beta: firefox-beta.svg
   gallery: image-viewer.svg
   google_calculator: google-calculator.svg
+  google_calendar: google-calendar.svg
   google_chrome: google-chrome.svg
+  google_chrome_beta: google-chrome-beta.svg
+  google_chrome_dev: google-chrome-dev.svg
+  google_chromium: google-chromium.svg
+  google_docs: google-docs.svg
+  google_drawing: google-drawings.svg
+  google_drive: google-drive.svg
+  google_earth: google-earth.svg
+  google_hangouts: google-hangouts.svg
+  google_keep: google-keep.svg
+  google_mail: google-mail.svg
   google_maps: google-maps.svg
   google_photos: google-photos.svg
+  google_play_books: google-play-books.svg
   google_play_music: google-play-music.svg
   google_play_store: google-play.svg
+  google_sheets: google-sheets.svg
+  google_slides: google-slides.svg
+  google_translate: google-translate.svg
   nextcloud: nextcloud.svg
   phone: sflphone.svg
   phone_alt: viber.svg
