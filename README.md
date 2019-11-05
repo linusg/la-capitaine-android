@@ -20,7 +20,9 @@ Any help is highly appreciated!
 
 - Android Studio
 - Python 3.6+
-- The following Python modules: `cairosvg`, `colored` (install using pip)
+- The following Python modules:
+  [`CairoSVG`](https://pypi.org/project/CairoSVG/),
+  [`colored`](https://pypi.org/project/colored/) (install using pip)
 
 ## Installation
 
