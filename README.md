@@ -12,7 +12,7 @@ launcher. Support for more launchers should be as simple as adding a few
 
 Naturally I will add icons for the apps I'm personally using first as that's
 the most straightforward way of making progess - I can directly test it on my
-device.
+device. A few popular Google and messenger apps are already included as well.
 
 Any help is highly appreciated!
 
