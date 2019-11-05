@@ -4,7 +4,8 @@ There's not much up-to-date information about creating icon themes for Android
 out there, so this document will collect a few useful tips and links.
 
 First of all, I'm using Lawnchair as my main launcher, so that's obviously the
-one I'm testing with. Lawnchar is open source which has been incredible helpful!
+one I'm testing with. [Lawnchair is open source](https://github.com/LawnchairLauncher/Lawnchair)
+which has been incredible helpful!
 
 For example there's a [list of icon pack intent names][lawnchair-iconpack-intents]
 for which `<intent-filter>`s should exist and from the [`appfilter.xml` parsing
