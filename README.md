@@ -30,9 +30,9 @@ Any help is highly appreciated!
 *There's no release of this app on the Google Play Store or F-Droid yet,
 although that might happen in the future.*
 
-Run `python3 res.py build` which will create the files `xml/appfilter.xml`,
-`xml/drawable.xml`, `values/iconpack.xml` and as well as rendering all used SVG
-icons (in `la-capitaine-icon-theme/apps/scalable`) to PNG files.
+Run `python3 res.py build` which will create the files `xml/appfilter.xml` and
+`xml/drawable.xml` as well as rendering all used SVG icons (from
+`la-capitaine-icon-theme/apps/scalable`) to PNG files.
 
 Open the project in Android Studio, compile it and install it on your phone or
 emulator.
