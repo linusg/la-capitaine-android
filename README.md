@@ -70,7 +70,8 @@ icons:
   example_icon: example-icon.svg
 ```
 
-This way an icon that's being used by multiple apps has only be included once.
+This way an icon that's being used by multiple apps has only be included once
+and general icons that don't belong to a specific app can be included as well.
 
 Note that the activity domain doesn't necessarily match the package domain.
 Please keep the entries sorted alphabetically by package name.
