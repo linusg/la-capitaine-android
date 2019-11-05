@@ -16,6 +16,16 @@ icons:
   file_manager_red: file-manager-red.svg
   gallery: image-viewer.svg
   keyboard: preferences-desktop-keyboard.svg
+  music_1_orange: media-player-banshee.svg
+  music_1_red: rhythmbox.svg
+  music_2: itunes.svg
+  music_2_alt_1: preferences-desktop-multimedia.svg
+  music_2_alt_2: view-media-playlist.svg
+  music_2_dark: lxmusic.svg
+  music_2_red: gmusicbrowser.svg
+  music_2_blue: multimedia-audio-player.svg
+  music_2_green: indicator-sound-switcher.svg
+  music_2_lime: deepin-music.svg
   phone_lime: sflphone.svg
   phone_pink: viber.svg
   settings: systemsettings.svg
