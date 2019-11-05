@@ -38,7 +38,6 @@ DRAWABLE_XML_TEMPLATE = """\
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <version>1</version>
-    <category title="Apps" />
     {items}
 </resources>
 """
