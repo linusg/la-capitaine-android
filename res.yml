@@ -3,11 +3,17 @@ icons:
   bitwarden: bitwarden.svg
   calendar: calendar.svg
   camera: camera.svg
+  camera_cheese: cheese.svg
+  camera_round: camera-web.svg
+  camera_round_alt: snap.svg
   clock: clock.svg
   contacts: addressbook.svg
   discord: discord.svg
   email: mail-client.svg
-  file_manager: file-manager.svg
+  email_alt: yast-mail.svg
+  file_manager_blue: file-manager-blue.svg
+  file_manager_green: file-manager-green.svg
+  file_manager_red: file-manager-red.svg
   firefox: firefox.svg
   firefox_beta: firefox-beta.svg
   gallery: image-viewer.svg
@@ -19,6 +25,7 @@ icons:
   google_play_store: google-play.svg
   nextcloud: nextcloud.svg
   phone: sflphone.svg
+  phone_alt: viber.svg
   rocket_chat: rocket-chat.svg
   settings: systemsettings.svg
   signal: org.signal.Signal.svg
@@ -26,9 +33,15 @@ icons:
   spotify: spotify.svg
   telegram: telegram.svg
   terminal: terminal.svg
+  terminal_alt: xterm.svg
+  terminal_blue: yakuake.svg
+  terminal_red: terminator.svg
   twitter: twitter.svg
+  twitter_dark: tweetdeck.svg
+  twitter_green: polly.svg
   whatsapp: whatsapp.svg
   youtube: youtube.svg
+  youtube_circle: youtube-circle.svg
 
 apps:
   - package: chat.rocket.android
@@ -45,7 +58,7 @@ apps:
 
   - package: com.android.documentsui
     activity: com.android.documentsui.LauncherActivity
-    icon: file_manager
+    icon: file_manager_blue
 
   - package: com.android.fpcamera3
     activity: com.android.camera.CameraLauncher
