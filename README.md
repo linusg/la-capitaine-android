@@ -3,9 +3,7 @@
 Icon theme for Android using the [La Capitaine](https://github.com/keeferrourke/la-capitaine-icon-theme)
 icons.
 
-<img src="images/icon_list_1.png" alt="Icon List (1)" height="400">
-<img src="images/icon_list_2.png" alt="Icon List (2)" height="400">
-<img src="images/icon_list_3.png" alt="Icon List (3)" height="400">
+<img src="images/icon_list_1.png" alt="Icon List (1)" height="400"> <img src="images/icon_list_2.png" alt="Icon List (2)" height="400"> <img src="images/icon_list_3.png" alt="Icon List (3)" height="400">
 
 This is still in a super early stage and currently only works with Lawnchair
 launcher. Support for more launchers should be as simple as adding a few
