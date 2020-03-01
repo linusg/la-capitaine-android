@@ -191,6 +191,11 @@ apps:
     icon: email
 
   - package: org.mozilla.fenix
+    activity: org.mozilla.fenix.App
+    icon: firefox_beta
+
+  # Old main activity
+  - package: org.mozilla.fenix
     activity: org.mozilla.fenix.HomeActivity
     icon: firefox_beta
 
