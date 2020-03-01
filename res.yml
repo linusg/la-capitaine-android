@@ -78,6 +78,11 @@ icons:
 
 apps:
   - package: chat.rocket.android
+    activity: com.zoontek.rnbootsplash.RNBootSplashActivity
+    icon: rocket_chat
+
+  # Old main activity
+  - package: chat.rocket.android
     activity: chat.rocket.reactnative.MainActivity
     icon: rocket_chat
 
