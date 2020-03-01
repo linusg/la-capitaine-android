@@ -23,7 +23,10 @@ Any help is highly appreciated!
 - The following Python modules:
   [`CairoSVG`](https://pypi.org/project/CairoSVG/),
   [`colored`](https://pypi.org/project/colored/) and
-  [`ruamel.yaml`](https://pypi.org/project/ruamel.yaml/) (install using pip)
+  [`ruamel.yaml`](https://pypi.org/project/ruamel.yaml/)
+  ```console
+  $ pip3 install -r requirements.txt
+  ```
 
 ## Installation
 
