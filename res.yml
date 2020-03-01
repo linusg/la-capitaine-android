@@ -60,6 +60,7 @@ icons:
 
   # Apps
   amazon: amazon-store.svg
+  anydesk: anydesk.svg
   bitwarden: bitwarden.svg
   discord: discord.svg
   firefox: firefox.svg
@@ -109,6 +110,10 @@ apps:
   - package: com.android.vending
     activity: com.android.vending.AssetBrowserActivity
     icon: google_play_store
+
+  - package: com.anydesk.anydeskandroid
+    activity: com.anydesk.anydeskandroid.gui.activity.MainActivity
+    icon: anydesk
 
   - package: com.discord
     activity: com.discord.app.AppActivity$Main
