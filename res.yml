@@ -114,6 +114,10 @@ apps:
     activity: com.discord.app.AppActivity$Main
     icon: discord
 
+  - package: com.google.android.apps.books
+    activity: com.google.android.apps.books.app.BooksActivity
+    icon: google_play_books
+
   - package: com.google.android.apps.maps
     activity: com.google.android.maps.MapsActivity
     icon: google_maps
