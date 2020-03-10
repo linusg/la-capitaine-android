@@ -65,6 +65,7 @@ icons:
   discord: discord.svg
   firefox: firefox.svg
   firefox_beta: firefox-beta.svg
+  firefox_nightly: firefox-nightly.svg
   nextcloud: nextcloud.svg
   rocket_chat: rocket-chat.svg
   signal: org.signal.Signal.svg
@@ -198,6 +199,10 @@ apps:
   - package: me.bluemail.mail
     activity: com.trtf.blue.activity.Accounts
     icon: email
+
+  - package: org.mozilla.fennec_aurora
+    activity: org.mozilla.fennec_aurora.App
+    icon: firefox_nightly
 
   - package: org.mozilla.fenix
     activity: org.mozilla.fenix.App
