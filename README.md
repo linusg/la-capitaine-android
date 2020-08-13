@@ -83,11 +83,6 @@ Now, do the steps from the *Installation* section again. You're done!
 
 Try restarting your launcher application if new icons don't appear immediately.
 
-## To Do
-
-- Currently, since icon files are rendered and saved per activity, there might
-  be duplicates.
-
 ## Authors
 
 - **Linus Groh** ([**@linusg**](https://github.com/linusg/)) -
