@@ -214,6 +214,10 @@ apps:
     activity: com.trtf.blue.activity.Accounts
     icon: email
 
+  - package: org.codeaurora.snapcam
+    activity: com.android.camera.CameraLauncher
+    icon: camera
+
   - package: org.mozilla.fennec_aurora
     activity: org.mozilla.fennec_aurora.App
     icon: firefox_nightly
