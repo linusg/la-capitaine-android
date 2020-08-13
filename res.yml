@@ -235,6 +235,10 @@ apps:
     activity: org.mozilla.firefox.App
     icon: firefox
 
+  - package: org.mozilla.firefox_beta
+    activity: org.mozilla.firefox_beta.App
+    icon: firefox_beta
+
   - package: org.telegram.messenger
     activity: org.telegram.ui.LaunchActivity
     icon: telegram
