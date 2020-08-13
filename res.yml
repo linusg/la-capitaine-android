@@ -66,6 +66,7 @@ icons:
   firefox: firefox.svg
   firefox_beta: firefox-beta.svg
   firefox_nightly: firefox-nightly.svg
+  github: github.svg
   nextcloud: nextcloud.svg
   rocket_chat: rocket-chat.svg
   signal: org.signal.Signal.svg
@@ -119,6 +120,10 @@ apps:
   - package: com.discord
     activity: com.discord.app.AppActivity$Main
     icon: discord
+
+  - package: com.github.android
+    activity: com.github.android.activities.MainActivity
+    icon: github
 
   - package: com.google.android.apps.books
     activity: com.google.android.apps.books.app.BooksActivity
