@@ -17,9 +17,10 @@ DRAWABLE_NAME_PREFIX = "la_capitaine__"
 PROJECT_DIR = Path(__file__).parent.resolve()
 
 LA_CAPITAINE_ICONS_DIR = PROJECT_DIR / "la-capitaine-icon-theme/apps/scalable"
-DRAWABLE_NODPI_DIR = PROJECT_DIR / "app/src/main/res/drawable-nodpi"
+RES_DRAWABLE_NODPI_DIR = PROJECT_DIR / "app/src/main/res/drawable-nodpi"
+RES_XML_DIR = PROJECT_DIR / "app/src/main/res/xml"
 
-APPFILTER_XML_PATH = PROJECT_DIR / "app/src/main/res/xml/appfilter.xml"
+APPFILTER_XML_PATH = RES_XML_DIR / "appfilter.xml"
 APPFILTER_XML_TEMPLATE = """\
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -33,7 +34,7 @@ APPFILTER_XML_TEMPLATE = """\
 </resources>
 """
 
-DRAWABLE_XML_PATH = PROJECT_DIR / "app/src/main/res/xml/drawable.xml"
+DRAWABLE_XML_PATH = RES_XML_DIR / "drawable.xml"
 DRAWABLE_XML_TEMPLATE = """\
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -57,6 +58,7 @@ def get_drawable_name(icon_name: str) -> str:
 
 
 def write_appfilter_xml(apps: Iterable[App]) -> None:
+    RES_XML_DIR.mkdir(mode=0o755, parents=True, exist_ok=True)
     items = [
         f'<item component="ComponentInfo{{{app.package}/{app.activity}}}"'
         f' drawable="{get_drawable_name(app.icon)}" />'
@@ -68,6 +70,7 @@ def write_appfilter_xml(apps: Iterable[App]) -> None:
 
 
 def write_drawable_xml(icons: Icons) -> None:
+    RES_XML_DIR.mkdir(mode=0o755, parents=True, exist_ok=True)
     items = [
         f'<item drawable="{get_drawable_name(icon_name)}" />'
         for icon_name in icons.keys()
@@ -78,11 +81,11 @@ def write_drawable_xml(icons: Icons) -> None:
 
 
 def write_icon_images(icons: Icons) -> None:
-    DRAWABLE_NODPI_DIR.mkdir(mode=0o755, parents=True, exist_ok=True)
+    RES_DRAWABLE_NODPI_DIR.mkdir(mode=0o755, parents=True, exist_ok=True)
     for icon_name, icon_file in icons.items():
         # Resolve allows using symlinks for icon file
         src = (LA_CAPITAINE_ICONS_DIR / icon_file).resolve()
-        dest = DRAWABLE_NODPI_DIR / f"{get_drawable_name(icon_name)}.png"
+        dest = RES_DRAWABLE_NODPI_DIR / f"{get_drawable_name(icon_name)}.png"
         print(
             f"Writing {COLOR_YELLOW}{dest.parent.name}/{dest.name}{COLOR_RESET} ({COLOR_CYAN}{src.name}{COLOR_RESET})"
         )
@@ -118,7 +121,7 @@ def main() -> None:
             except FileNotFoundError:
                 # missing_ok param is 3.8+ only
                 pass
-        for file in DRAWABLE_NODPI_DIR.glob(f"{DRAWABLE_NAME_PREFIX}*.png"):
+        for file in RES_DRAWABLE_NODPI_DIR.glob(f"{DRAWABLE_NAME_PREFIX}*.png"):
             file.unlink()
             print(f"Removed {COLOR_YELLOW}{file.parent.name}/{file.name}{COLOR_RESET}")
     else:
