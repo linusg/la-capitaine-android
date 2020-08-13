@@ -15,6 +15,7 @@ icons:
   file_manager_green: file-manager-green.svg
   file_manager_red: file-manager-red.svg
   gallery: image-viewer.svg
+  internet_chat: internet-chat.svg
   keyboard: preferences-desktop-keyboard.svg
   music_1_orange: media-player-banshee.svg
   music_1_red: rhythmbox.svg
@@ -200,6 +201,10 @@ apps:
   - package: com.x8bit.bitwarden
     activity: com.x8bit.bitwarden.MainActivity
     icon: bitwarden
+
+  - package: io.mrarm.irc
+    activity: io.mrarm.irc.MainActivity
+    icon: internet_chat
 
   - package: me.bluemail.mail
     activity: com.trtf.blue.activity.Accounts
