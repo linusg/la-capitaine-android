@@ -1,5 +1,6 @@
 icons:
   # General
+  audio_recorder: audio-recorder.svg
   calculator: accessories-calculator.svg
   calendar: calendar.svg
   camera: camera.svg
@@ -205,6 +206,10 @@ apps:
   - package: com.simplemobiletools.notes.pro
     activity: com.simplemobiletools.notes.pro.activities.SplashActivity.Orange
     icon: notes
+
+  - package: com.simplemobiletools.voicerecorder
+    activity: com.simplemobiletools.voicerecorder.activities.SplashActivity.Orange
+    icon: audio_recorder
 
   - package: com.Slack
     activity: slack.app.ui.HomeActivity
