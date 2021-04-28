@@ -53,9 +53,8 @@ To add missing icons, you'll need:
 - The name of the activity that's missing an icon (usually the main activity)
 - An icon from `la-capitaine-icon-theme/apps/scalable` that should be applied
 
-Use a tool like [Assist Mapper](https://play.google.com/store/apps/details?id=amirz.assistmapper)
-to obtain these details (this app is for assistant button re-mapping, but it
-shows package and activity names and highlights the main activity).
+Use a tool like [App Manager](https://f-droid.org/en/packages/io.github.muntashirakon.AppManager/)
+to obtain these details (installable from F-Droid).
 
 A new app entry in [`res.yml`](res.yml) looks like this:
 
