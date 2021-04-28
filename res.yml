@@ -197,6 +197,10 @@ apps:
     activity: com.simplemobiletools.gallery.pro.activities.SplashActivity.Orange
     icon: gallery
 
+  - package: com.simplemobiletools.musicplayer
+    activity: com.simplemobiletools.musicplayer.activities.SplashActivity.Orange
+    icon: music_1_red
+
   - package: com.Slack
     activity: slack.app.ui.HomeActivity
     icon: slack
