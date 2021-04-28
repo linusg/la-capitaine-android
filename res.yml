@@ -166,6 +166,10 @@ apps:
     activity: com.android.documentsui.LauncherActivity
     icon: file_manager_blue
 
+  - package: com.google.android.GoogleCamera
+    activity: com.android.camera.CameraLauncher
+    icon: camera
+
   - package: com.google.android.GoogleCameraEng
     activity: com.android.camera.CameraLauncher
     icon: camera
