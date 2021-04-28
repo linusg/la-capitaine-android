@@ -80,6 +80,7 @@ icons:
   twitter_lime: polly.svg
   vlc: vlc.svg
   whatsapp: whatsapp.svg
+  wikipedia: wikipedia.svg
 
 apps:
   - package: chat.rocket.android
@@ -258,3 +259,7 @@ apps:
   - package: org.videolan.vlc
     activity: org.videolan.vlc.StartActivity
     icon: vlc
+
+  - package: org.wikipedia
+    activity: org.wikipedia.main.MainActivity
+    icon: wikipedia
