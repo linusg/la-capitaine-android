@@ -74,6 +74,7 @@ icons:
   slack: slack.svg
   spotify: spotify.svg
   telegram: telegram.svg
+  tor_browser: tor-browser.svg
   twitter: twitter.svg
   twitter_dark: tweetdeck.svg
   twitter_lime: polly.svg
@@ -249,6 +250,10 @@ apps:
   - package: org.thoughtcrime.securesms
     activity: org.thoughtcrime.securesms.RoutingActivity
     icon: signal
+
+  - package: org.torproject.torbrowser
+    activity: org.torproject.torbrowser.App
+    icon: tor_browser
 
   - package: org.videolan.vlc
     activity: org.videolan.vlc.StartActivity
