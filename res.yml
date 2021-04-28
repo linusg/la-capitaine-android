@@ -191,7 +191,7 @@ apps:
     icon: gallery
 
   - package: com.Slack
-    activity: com.Slack.ui.HomeActivity
+    activity: slack.app.ui.HomeActivity
     icon: slack
 
   - package: com.spotify.music
