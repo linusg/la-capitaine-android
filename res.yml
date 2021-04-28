@@ -162,6 +162,10 @@ apps:
     activity: com.google.android.dialer.extensions.GoogleDialtactsActivity
     icon: phone_lime
 
+  - package: com.google.android.documentsui
+    activity: com.android.documentsui.LauncherActivity
+    icon: file_manager_blue
+
   - package: com.google.android.GoogleCameraEng
     activity: com.android.camera.CameraLauncher
     icon: camera
