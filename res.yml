@@ -60,6 +60,7 @@ icons:
   youtube_circle: youtube-circle.svg
 
   # Apps
+  adobe_reader: acroread.svg
   amazon: amazon-store.svg
   anydesk: anydesk.svg
   bitwarden: bitwarden.svg
@@ -91,6 +92,10 @@ apps:
   - package: chat.rocket.android
     activity: chat.rocket.reactnative.MainActivity
     icon: rocket_chat
+
+  - package: com.adobe.reader
+    activity: com.adobe.reader.AdobeReader
+    icon: adobe_reader
 
   - package: com.amazon.mShop.android.shopping
     activity: com.amazon.mShop.home.HomeActivity
