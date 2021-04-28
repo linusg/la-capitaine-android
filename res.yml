@@ -234,11 +234,6 @@ apps:
     activity: org.mozilla.fenix.App
     icon: firefox_beta
 
-  # Old main activity
-  - package: org.mozilla.fenix
-    activity: org.mozilla.fenix.HomeActivity
-    icon: firefox_beta
-
   - package: org.mozilla.firefox
     activity: org.mozilla.firefox.App
     icon: firefox
