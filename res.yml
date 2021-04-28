@@ -213,6 +213,10 @@ apps:
     activity: com.twitter.android.StartActivity
     icon: twitter
 
+  - package: com.vanced.android.youtube
+    activity: com.google.android.youtube.app.honeycomb.Shell$HomeActivity
+    icon: youtube
+
   - package: com.whatsapp
     activity: com.whatsapp.Main
     icon: whatsapp
