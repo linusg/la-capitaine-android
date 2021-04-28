@@ -27,6 +27,7 @@ icons:
   music_2_blue: multimedia-audio-player.svg
   music_2_green: indicator-sound-switcher.svg
   music_2_lime: deepin-music.svg
+  notes: notes.svg
   phone_lime: sflphone.svg
   phone_pink: viber.svg
   settings: systemsettings.svg
@@ -200,6 +201,10 @@ apps:
   - package: com.simplemobiletools.musicplayer
     activity: com.simplemobiletools.musicplayer.activities.SplashActivity.Orange
     icon: music_1_red
+
+  - package: com.simplemobiletools.notes.pro
+    activity: com.simplemobiletools.notes.pro.activities.SplashActivity.Orange
+    icon: notes
 
   - package: com.Slack
     activity: slack.app.ui.HomeActivity
