@@ -103,6 +103,10 @@ apps:
     activity: com.amazon.mShop.home.HomeActivity
     icon: amazon
 
+  - package: com.android.camera2
+    activity: com.android.camera.CameraLauncher
+    icon: camera
+
   - package: com.android.chrome
     activity: com.google.android.apps.chrome.Main
     icon: google_chrome
