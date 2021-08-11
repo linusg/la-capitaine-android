@@ -119,6 +119,10 @@ apps:
     activity: com.android.contacts.activities.PeopleActivity
     icon: contacts
 
+  - package: com.android.deskclock
+    activity: com.android.deskclock.DeskClock
+    icon: clock
+
   - package: com.android.documentsui
     activity: com.android.documentsui.LauncherActivity
     icon: file_manager_blue
