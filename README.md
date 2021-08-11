@@ -13,7 +13,8 @@ Adding support for more launchers should be as simple as adding a few
 
 Naturally I will add icons for the apps I'm personally using first as that's
 the most straightforward way of making progess - I can directly test it on my
-device. A few popular Google and messenger apps are already included as well.
+device. Most of the default AOSP and LineageOS apps, and a few popular Google
+and messenger apps are already included as well.
 
 Any help is highly appreciated!
 
@@ -25,8 +26,9 @@ Any help is highly appreciated!
   [`CairoSVG`](https://pypi.org/project/CairoSVG/),
   [`colored`](https://pypi.org/project/colored/) and
   [`ruamel.yaml`](https://pypi.org/project/ruamel.yaml/)
+
   ```console
-  $ pip3 install -r requirements.txt
+  pip3 install -r requirements.txt
   ```
 
 ## Installation
