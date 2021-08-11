@@ -135,6 +135,10 @@ apps:
     activity: com.android.camera.CameraLauncher
     icon: camera
 
+  - package: com.android.gallery3d
+    activity: com.android.gallery3d.app.GalleryActivity
+    icon: gallery
+
   - package: com.android.settings
     activity: com.android.settings.Settings
     icon: settings
