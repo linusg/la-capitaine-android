@@ -293,6 +293,10 @@ apps:
     activity: org.lineageos.jelly.MainActivity
     icon: browser
 
+  - package: org.lineageos.recorder
+    activity: org.lineageos.recorder.RecorderActivity
+    icon: audio_recorder
+
   - package: org.mozilla.fennec_aurora
     activity: org.mozilla.fennec_aurora.App
     icon: firefox_nightly
