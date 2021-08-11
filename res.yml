@@ -280,6 +280,10 @@ apps:
     activity: com.android.camera.CameraLauncher
     icon: camera
 
+  - package: org.lineageos.eleven
+    activity: org.lineageos.eleven.ui.activities.HomeActivity
+    icon: music_1_red
+
   - package: org.mozilla.fennec_aurora
     activity: org.mozilla.fennec_aurora.App
     icon: firefox_nightly
