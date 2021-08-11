@@ -5,8 +5,9 @@ icons.
 
 <img src="images/icon_list_1.png" alt="Icon List (1)" height="400"> <img src="images/icon_list_2.png" alt="Icon List (2)" height="400"> <img src="images/icon_list_3.png" alt="Icon List (3)" height="400">
 
-This is still in a super early stage and currently only works with Lawnchair
-launcher. Support for more launchers should be as simple as adding a few
+It's only tested with Lawnchair (v10, v11), but is probably supported by a few
+other launchers as well (the ones Lawnchair supports for icon packs).
+Adding support for more launchers should be as simple as adding a few
 `<intent-filter>`s to `AndroidManifest.xml`,
 [see here](https://github.com/iamareebjamal/scratch_icon_pack_source/blob/master/app/src/main/AndroidManifest.xml).
 
