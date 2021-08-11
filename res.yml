@@ -7,6 +7,7 @@ icons:
   camera_cheese: cheese.svg
   camera_round: camera-web.svg
   camera_round_alt: snap.svg
+  chat: hipchat.svg
   clock: clock.svg
   clock_alt: yast-timezone.svg
   contacts: addressbook.svg
@@ -138,6 +139,10 @@ apps:
   - package: com.android.gallery3d
     activity: com.android.gallery3d.app.GalleryActivity
     icon: gallery
+
+  - package: com.android.messaging
+    activity: com.android.messaging.ui.conversationlist.ConversationListActivity
+    icon: chat
 
   - package: com.android.settings
     activity: com.android.settings.Settings
