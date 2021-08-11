@@ -1,6 +1,7 @@
 icons:
   # General
   audio_recorder: audio-recorder.svg
+  browser: browser.svg
   calculator: accessories-calculator.svg
   calendar: calendar.svg
   camera: camera.svg
@@ -287,6 +288,10 @@ apps:
   - package: org.lineageos.etar
     activity: com.android.calendar.AllInOneActivity
     icon: calendar
+
+  - package: org.lineageos.jelly
+    activity: org.lineageos.jelly.MainActivity
+    icon: browser
 
   - package: org.mozilla.fennec_aurora
     activity: org.mozilla.fennec_aurora.App
