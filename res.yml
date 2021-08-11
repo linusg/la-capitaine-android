@@ -107,6 +107,10 @@ apps:
     activity: com.android.camera.CameraLauncher
     icon: camera
 
+  - package: com.android.calculator2
+    activity: com.android.calculator2.Calculator
+    icon: google_calculator
+
   - package: com.android.chrome
     activity: com.google.android.apps.chrome.Main
     icon: google_chrome
