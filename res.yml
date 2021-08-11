@@ -284,6 +284,10 @@ apps:
     activity: org.lineageos.eleven.ui.activities.HomeActivity
     icon: music_1_red
 
+  - package: org.lineageos.etar
+    activity: com.android.calendar.AllInOneActivity
+    icon: calendar
+
   - package: org.mozilla.fennec_aurora
     activity: org.mozilla.fennec_aurora.App
     icon: firefox_nightly
