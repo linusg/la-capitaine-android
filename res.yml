@@ -123,6 +123,10 @@ apps:
     activity: com.android.deskclock.DeskClock
     icon: clock
 
+  - package: com.android.dialer
+    activity: com.android.dialer.main.impl.MainActivity
+    icon: phone_lime
+
   - package: com.android.documentsui
     activity: com.android.documentsui.LauncherActivity
     icon: file_manager_blue
