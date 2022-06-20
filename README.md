@@ -12,7 +12,7 @@ Adding support for more launchers should be as simple as adding a few
 [see here](https://github.com/iamareebjamal/scratch_icon_pack_source/blob/master/app/src/main/AndroidManifest.xml).
 
 Naturally I will add icons for the apps I'm personally using first as that's
-the most straightforward way of making progess - I can directly test it on my
+the most straightforward way of making progress - I can directly test it on my
 device. Most of the default AOSP and LineageOS apps, and a few popular Google
 and messenger apps are already included as well.
 
@@ -96,3 +96,4 @@ Try restarting your launcher application if new icons don't appear immediately.
 
 This project is licensed under the GPLv3 license - see [`LICENSE`](LICENSE)
 file for details.
+
