@@ -158,7 +158,7 @@ apps:
     icon: anydesk
 
   - package: com.discord
-    activity: com.discord.app.AppActivity$Main
+    activity: com.discord.main.MainActivity
     icon: discord
 
   - package: com.github.android
