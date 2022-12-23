@@ -314,7 +314,7 @@ apps:
     icon: firefox_beta
 
   - package: org.telegram.messenger
-    activity: org.telegram.ui.LaunchActivity
+    activity: org.telegram.messenger.DefaultIcon
     icon: telegram
 
   - package: org.thoughtcrime.securesms
