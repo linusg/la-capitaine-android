@@ -242,7 +242,7 @@ apps:
     icon: audio_recorder
 
   - package: com.Slack
-    activity: slack.app.ui.HomeActivity
+    activity: slack.features.home.HomeActivity
     icon: slack
 
   - package: com.spotify.music
