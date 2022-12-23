@@ -157,6 +157,10 @@ apps:
     activity: com.anydesk.anydeskandroid.gui.activity.MainActivity
     icon: anydesk
 
+  - package: com.artifex.mupdf.viewer.app
+    activity: com.artifex.mupdf.viewer.app.LibraryActivity
+    icon: adobe_reader
+
   - package: com.discord
     activity: com.discord.main.MainActivity
     icon: discord
