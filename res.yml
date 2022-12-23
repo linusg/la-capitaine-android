@@ -69,6 +69,7 @@ icons:
   anydesk: anydesk.svg
   bitwarden: bitwarden.svg
   discord: discord.svg
+  element: riot.svg
   firefox: firefox.svg
   firefox_beta: firefox-beta.svg
   firefox_nightly: firefox-nightly.svg
@@ -276,6 +277,10 @@ apps:
   - package: com.x8bit.bitwarden
     activity: com.x8bit.bitwarden.MainActivity
     icon: bitwarden
+
+  - package: im.vector.app
+    activity: im.vector.application.features.Alias
+    icon: element
 
   - package: io.mrarm.irc
     activity: io.mrarm.irc.MainActivity
