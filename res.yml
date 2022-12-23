@@ -34,6 +34,7 @@ icons:
   phone_lime: sflphone.svg
   phone_pink: viber.svg
   settings: systemsettings.svg
+  sudoku: sudoku.svg
   terminal: terminal.svg
   terminal_alt: xterm.svg
   terminal_blue: yakuake.svg
@@ -309,6 +310,10 @@ apps:
   - package: org.lineageos.recorder
     activity: org.lineageos.recorder.RecorderActivity
     icon: audio_recorder
+
+  - package: org.moire.opensudoku
+    activity: org.moire.opensudoku.gui.TitleScreenActivity
+    icon: sudoku
 
   - package: org.mozilla.fennec_aurora
     activity: org.mozilla.fennec_aurora.App
