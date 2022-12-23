@@ -39,6 +39,7 @@ icons:
   terminal_alt: xterm.svg
   terminal_blue: yakuake.svg
   terminal_red: terminator.svg
+  weather: weather.svg
 
   # Google
   google_calculator: google-calculator.svg
@@ -350,3 +351,7 @@ apps:
   - package: org.wikipedia
     activity: org.wikipedia.main.MainActivity
     icon: wikipedia
+
+  - package: wangdaye.com.geometricweather
+    activity: wangdaye.com.geometricweather.main.MainActivity
+    icon: weather
