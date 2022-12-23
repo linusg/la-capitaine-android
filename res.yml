@@ -225,6 +225,10 @@ apps:
     activity: com.google.android.youtube.app.honeycomb.Shell$HomeActivity
     icon: youtube
 
+  - package: com.maltaisn.notes.sync
+    activity: com.maltaisn.notes.ui.main.MainActivity
+    icon: notes
+
   - package: com.nextcloud.client
     activity: com.owncloud.android.ui.activity.FileDisplayActivity
     icon: nextcloud
